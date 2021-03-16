@@ -93,6 +93,225 @@ p {
     margin-right: 10px;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+a:active,
+a:focus {
+  color: #6f6f6f;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  -ms-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+}
+
+.button-link:visited {
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#features {
+  background: #fff
+}
+
+#features .icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  z-index: 1
+}
+
+#features .content-left span {
+  float: right
+}
+
+#features .content-left .text {
+  text-align: right
+}
+
+#features .content-right span {
+  float: left
+}
+
+#features .box-item {
+  box-shadow: 0 0 12px #f4f4f4;
+  padding: 15px;
+  line-height: 22px;
+  margin-top: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  -mox-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  top: 0
+}
+
+#features .box-item .icon {
+  text-align: center;
+  margin: 12px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+#features .box-item .icon i {
+  color: #008de2;
+  font-size: 30px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+#features .box-item .text h4 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+#features .box-item .text p {
+  font-size: 14px;
+  line-height: 26px
+}
+
+#features .box-item:hover {
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, .1)
+}
+
+#features .box-item:hover h4 {
+  color: #008de2
+}
+
+#features .show-box {
+  margin-top: 50px
+}
+
+#features .show-box img {
+  width: 100%
+}
+
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #db584e;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+    opacity: .8;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #000000;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
 .get_in_touch{
   max-width: 800px;
   margin: 50px auto;
@@ -678,8 +897,6 @@ span{
     width:90%;
   }
 }
-
-  
 
 @-webkit-keyframes fade-in-top {
     0% {
